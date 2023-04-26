@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     druid:
-      password: abc20020629
+      password: yourPass
       driver-class-name: com.mysql.cj.jdbc.Driver
       username: root
       url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
@@ -11,7 +11,7 @@ spring:
   redis:
     host: cq
     port: 6379
-    password: 123456
+    password: yourpass
     database: 0            #数据库索引，默认为0
     connect-timeout: 30s   #连接等待的最大超时时间
     lettuce: #线程安全，比jedis更适合高并发环境,且是springboot内置默认使用的
@@ -23,8 +23,8 @@ spring:
 
   mail:
     host: smtp.qq.com  #设置邮箱类型
-    username: 1064485698@qq.com
-    password: kxamthqubltybfhi   #授权码
+    username: yourEmail
+    password: yourSmtpToken   #授权码
     default-encoding: UTF-8
   data:
     mongodb:

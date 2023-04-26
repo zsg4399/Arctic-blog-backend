@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/images")
 @Slf4j
 public class ImageController {
-    private static final String Access_Token="lyebWxXOw3wLyREDNpDXM6qynmqyozX5";
+    private static final String Access_Token="your_smms_token";
 
     @PostMapping("/upload")
     public Result<ImageVO> uploadImage(){
