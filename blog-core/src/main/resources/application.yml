@@ -9,9 +9,9 @@ spring:
       url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
 
   redis:
-    host: cq
-    port: 6379
-    password: yourpass
+    host: cq   #服务提供的主机号，可以用域名
+    port: 6379   #端口号
+    password: yourpass     #redis的密码
     database: 0            #数据库索引，默认为0
     connect-timeout: 30s   #连接等待的最大超时时间
     lettuce: #线程安全，比jedis更适合高并发环境,且是springboot内置默认使用的
@@ -23,7 +23,7 @@ spring:
 
   mail:
     host: smtp.qq.com  #设置邮箱类型
-    username: yourEmail
+    username: yourEmail       #邮箱地址
     password: yourSmtpToken   #授权码
     default-encoding: UTF-8
   data:
